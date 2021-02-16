@@ -1,0 +1,27 @@
+.card {
+    /* background-color: darkgray; */
+    text-align: center;
+    width: 18rem;
+    height: 10rem;
+    margin-left: 500px;
+    
+}
+
+header {
+    height: 75px;
+    margin-bottom: 100px;
+    
+}
+
+h3 {
+    float: right;
+    margin-top: 0px;
+}
+
+#start {
+    background-color: rgb(230, 62, 62);
+}
+
+body {
+    background-color: rgb(230, 216, 216);
+}
