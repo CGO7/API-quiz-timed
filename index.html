@@ -6,31 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Quiz</title>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/survey-jquery@1.8.31/survey.jquery.min.js"></script>
+    <link href="https://unpkg.com/survey-knockout@1.8.31/modern.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css">
     
 <header>
     
     <a href= "#" class="highscore" id= "highscore">View Highscore</a>
-    <h3 id= "timer">Timer</h3>
+    <h3 id= "timer">Timer: 75 </h3>
 
 </header>
-<body>
-    <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Would you like to start a game?</h5>
-          <p class="card-text">You will be given 4 multiple choice questions in which you will have 75 seconds to answer all of the questions.</p>
-        </div>
-
-        <button type="button" button id= "start">Start</button>
-      </div>
-    <script src= "script.js"></script> 
+<body> 
+    <div id="card">
+       <h4 id="card-title">Would you like to start a game?</h5>
+          <p id="card-text">You will be given 4 multiple choice questions in which you will have 75 seconds to answer all of the questions.</p>    
+          <button id= "start">Start</button>   
+    <div id="quizResult">  
+    
+    </div>  
+    <script src= "assets/java/script.js"></script> 
 </body>
 </html>
 
 <!--view highscore button with hyperlink-->
-
-
-<!--timer 75 seconds-->
 
 
 <!--questions for quiz-->
