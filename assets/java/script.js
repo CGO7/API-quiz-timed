@@ -1,5 +1,9 @@
 //!!!need a start button to start game with instructions
-document.getElementById("start").addEventListener("click", setTime);
+// document.getElementById("start").addEventListener("click", setTime);
+// $("#start").click(function() {
+    
+//     setTime();
+// });
 // document.getElementById("start").Survey;
 
 //!!!need a timer to countdown from 75, that ends game when done
@@ -38,7 +42,7 @@ function setTime() {
 //   }
 
 
-function Survey () {
+Survey
   
     
 var json = {
@@ -47,6 +51,19 @@ var json = {
     goNextPageAutomatic: true,
     showNavigationButtons: false,
     pages: [
+        {
+            questions: [
+                {
+                    type: "buttongroup",
+                    name: "Start",
+                    title: "Would you like to play a game",
+                    choices: ["START"]
+                   
+                    
+                }
+            ]
+        },
+
        
         {
             questions: [
@@ -77,8 +94,6 @@ var json = {
             ]
         }
     ],
-    completedHtml: "<p>Your anwers are:</p><p>When was the Civil War?: <b>{civilwar}</b>. The correct is: <b>1850-1900</b></p><p>Who said 'Give me liberty or give me death?': <b>{libertyordeath}</b>. The correct is: <b>Patrick Henry</b></p><p>What is the Magna Carta?: <b>{magnacarta}</b>. The correct is: <b>The foundation of the British parliamentary system</b></p>"
-};
 }
 
 window.survey = new Survey.Model(json);
