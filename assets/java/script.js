@@ -1,12 +1,12 @@
 //!!!need a start button to start game with instructions
-document.getElementById("start").addEventListener("click", Survey);
+document.getElementById("start").addEventListener("click", setTime);
 // document.getElementById("start").Survey;
 
 //!!!need a timer to countdown from 75, that ends game when done
 //query selector for javas to do css functions lesson #5
 //lesson #7 to change html look over and over
 //timers-intervals lesson #9 and #10 video 2/6
-var timerSeconds = 10;
+var timerSeconds = 75;
 var quizEl = document.getElementById("card");
 var timeEl = document.getElementById("timer");
 var newQuizEl = document.getElementById("questions");
